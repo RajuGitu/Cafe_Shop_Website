@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 18%;
+    width: 100%;
+    background-color: white;
+}
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.nav-bar ul li a{
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 40px;
+    color: #f4b41a;
+}
+.nav-bar ul li .active , .nav-bar ul li a:hover{
+    color: rgba(168, 136, 9, 0.678);
+    border-bottom: 2px solid rgba(168, 136, 9, 0.678);
+}
+.header .img img{
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+}
+.menu i{
+    font-size: 30px;
+}
+.menu-icon{
+    display: none;
+}
+.home .home-dish
+{
+    height:90vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.home .home-dish img{
+    height: inherit;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.home .content{
+    position:absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 4rem;
+    width: 50%;
+    color: white;
+}
+.ord-btn{
+    position: absolute;
+    top:75%;
+    left:10%;
+}
+.ord-btn button{
+    height: 5rem;
+    width: 14rem;
+    border-radius: 15px;
+    background-color: rgba(235, 150, 22, 0.926);
+    border: none;
+    border:1px solid rgba(#212121);
+    letter-spacing:1px;
+    font-weight: 550;
+    font-size: 2em;
+    padding: 0 5px;
+}
+.home .promo{
+    height: 180px;
+    width: 20px;
+    position: absolute;
+    bottom: 40px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.home .promo span a{
+    margin-right: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.About{
+    height: 600px;
+    width: 100%;
+}
+.About .container{
+    color: white;
+    display: flex;
+    background-color: palegoldenrod;
+    padding: 15px;
+}
+.About h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 15%;
+    background-color: lightblue;
+}
+.About .container .img{
+    margin-left: 15px;
+    animation: hoverEffectOut 1s linear 0s backwards;
+}
+.About .container .img img{
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.About .container .img:hover{
+    cursor: pointer;
+    animation: hoverEffect 1s linear 0s forwards;
+}
+@keyframes hoverEffect{
+    to{
+        transform:scale(1.08);
+        transition: transform 1s ease-in-out;
+    }
+}
+@keyframes hoverEffectOut{
+    from{
+        transform:scale(1.08);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+.About .container .content{
+    font-size: 1.5rem;
+    width: 50%;
+    height: max-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+.About .container .content p{
+    color: #212121;
+    line-height: 1.8rem;
+}
+.special{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.special h2{
+    padding-top: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 18%;
+}
+.special .spe-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+.try{
+    height: 280px;
+    width: 320px;
+}
+.special .spe-menu div img{
+    height: 280px;
+    width: 320px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+.special .spe-menu div img:hover{
+    transform: scale(1.05);
+}
+.try .content{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+#Menu{
+    height: 65vh;
+    width: 100%;
+    background-color: rgb(252, 244, 235);
+}
+.menu .heading h2{
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 4em;
+    padding: 10px 0;
+}
+.menu .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.menu .container .menu-photo{
+    height: 80%;
+    width: 94%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.menu .container .menu-photo img{
+    width: 430px;
+    height: 325px;
+    object-fit: cover;
+    margin:0  10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
